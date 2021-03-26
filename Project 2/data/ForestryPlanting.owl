@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.forestryspaces.org/onto#"
+     xml:base="http://www.forestryspaces.org/onto"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.forestryspaces.org/onto"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasBorough -->
+
+    <owl:ObjectProperty rdf:about="http://www.forestryspaces.org/onto#hasBorough">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#Park"/>
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+        <rdfs:range rdf:resource="http://www.forestryspaces.org/onto#Borough"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasJurisdiction -->
+
+    <owl:ObjectProperty rdf:about="http://www.forestryspaces.org/onto#hasJurisdiction">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+        <rdfs:range rdf:resource="http://www.forestryspaces.org/onto#Jurisdiction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasPark -->
+
+    <owl:ObjectProperty rdf:about="http://www.forestryspaces.org/onto#hasPark">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+        <rdfs:range rdf:resource="http://www.forestryspaces.org/onto#Park"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasSanctuary -->
+
+    <owl:ObjectProperty rdf:about="http://www.forestryspaces.org/onto#hasSanctuary">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#Park"/>
+        <rdfs:range rdf:resource="http://www.forestryspaces.org/onto#Sanctuary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasSite -->
+
+    <owl:ObjectProperty rdf:about="http://www.forestryspaces.org/onto#hasSite">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+        <rdfs:range rdf:resource="http://www.forestryspaces.org/onto#PSSite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasStatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.forestryspaces.org/onto#hasStatus">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+        <rdfs:range rdf:resource="http://www.forestryspaces.org/onto#PSStatus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasStreet -->
+
+    <owl:ObjectProperty rdf:about="http://www.forestryspaces.org/onto#hasStreet">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#Borough"/>
+        <rdfs:range rdf:resource="http://www.forestryspaces.org/onto#Street"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasZone -->
+
+    <owl:ObjectProperty rdf:about="http://www.forestryspaces.org/onto#hasZone">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#Park"/>
+        <rdfs:range rdf:resource="http://www.forestryspaces.org/onto#ParkZone"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasAcres -->
+
+    <owl:DatatypeProperty rdf:about="http://www.forestryspaces.org/onto#hasAcres">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#Park"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasCommunityBoard -->
+
+    <owl:DatatypeProperty rdf:about="http://www.forestryspaces.org/onto#hasCommunityBoard">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasCreatedDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.forestryspaces.org/onto#hasCreatedDate">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasDirection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.forestryspaces.org/onto#hasDirection">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#Park"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasGeometry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.forestryspaces.org/onto#hasGeometry">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.forestryspaces.org/onto#hasLocation">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.forestryspaces.org/onto#hasName">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#Borough"/>
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#Jurisdiction"/>
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PSSite"/>
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PSStatus"/>
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#Park"/>
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#ParkZone"/>
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#Sanctuary"/>
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#Street"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasObjectID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.forestryspaces.org/onto#hasObjectID">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#hasUpdatedDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.forestryspaces.org/onto#hasUpdatedDate">
+        <rdfs:domain rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#Borough -->
+
+    <owl:Class rdf:about="http://www.forestryspaces.org/onto#Borough"/>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#Jurisdiction -->
+
+    <owl:Class rdf:about="http://www.forestryspaces.org/onto#Jurisdiction"/>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#PSSite -->
+
+    <owl:Class rdf:about="http://www.forestryspaces.org/onto#PSSite">
+        <rdfs:subClassOf rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#PSStatus -->
+
+    <owl:Class rdf:about="http://www.forestryspaces.org/onto#PSStatus">
+        <rdfs:subClassOf rdf:resource="http://www.forestryspaces.org/onto#PlantingSpace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#Park -->
+
+    <owl:Class rdf:about="http://www.forestryspaces.org/onto#Park">
+        <rdfs:subClassOf rdf:resource="http://www.forestryspaces.org/onto#Borough"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#ParkZone -->
+
+    <owl:Class rdf:about="http://www.forestryspaces.org/onto#ParkZone">
+        <rdfs:subClassOf rdf:resource="http://www.forestryspaces.org/onto#Borough"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#PlantingSpace -->
+
+    <owl:Class rdf:about="http://www.forestryspaces.org/onto#PlantingSpace"/>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#Sanctuary -->
+
+    <owl:Class rdf:about="http://www.forestryspaces.org/onto#Sanctuary"/>
+    
+
+
+    <!-- http://www.forestryspaces.org/onto#Street -->
+
+    <owl:Class rdf:about="http://www.forestryspaces.org/onto#Street">
+        <rdfs:subClassOf rdf:resource="http://www.forestryspaces.org/onto#Borough"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
